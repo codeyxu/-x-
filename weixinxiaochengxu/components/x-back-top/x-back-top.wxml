@@ -1,0 +1,4 @@
+<!--components/x-back-top/x-back-top.wxml-->
+<view class = "back-top" bindtap="backtop">
+   <image src="/asside/common/top.png"></image>
+</view>

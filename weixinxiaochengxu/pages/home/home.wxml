@@ -1,0 +1,46 @@
+<!--pages/home/home.wxml-->
+<!-- 展示轮播图 -->
+<!-- <swiper class = 'swipe  swiperclass' circular autoplay interval="2000" duration="300" indicator-dots indicator-active-color="#ff5777">
+<block wx:for="{{banners}}" wx:key = "{{index}}">
+<swiper-item class = "swiper-item">
+<image src="{{item.image}}" mode="widthFix" ></image>
+</swiper-item>
+</block>
+</swiper> -->
+
+<x-swiper list = "{{banners}}"></x-swiper>
+
+<!-- recomends -->
+
+<!-- <view class = "recomend">
+<block wx:for="{{recommends}}">
+<view class = "recimg">
+<image src="{{item.image}}"></image>
+<view class = "rectext">{{item.title}}</view>
+</view>
+</block>
+</view> -->
+<x-recomend recommends = "{{recommends}}"></x-recomend>
+
+<!-- 本季流行 -->
+<view class = "img">
+<image src="/asside/liuxing/liuxing.jpg" mode="widthFix"></image>
+</view>
+
+<!-- tabcoun -->
+
+<!-- <view class = "tabcoun">
+  <block  wx:for="{{titles}}">
+  <view class = "tabtex {{curindex == index?'active':''}}" bind:tap = 'click' data-index="{{index}}">
+  <text>{{item}}</text>
+  </view>
+  </block>
+</view> -->
+<tabcoun titles = "{{titles}}" bind:itclick = "click"></tabcoun>
+
+<!-- 商品数据 -->
+
+<x-goods goods = "{{goods[curentType].list}}"></x-goods>
+
+<!-- 回到顶部 -->
+<x-back-top wx:if="{{showback}}"></x-back-top>

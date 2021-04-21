@@ -1,0 +1,9 @@
+<!--components/recomend/x-recomend.wxml-->
+<view class = "recomend">
+<block wx:for="{{recommends}}">
+<view class = "recimg">
+<image src="{{item.image}}"></image>
+<view class = "rectext">{{item.title}}</view>
+</view>
+</block>
+</view>

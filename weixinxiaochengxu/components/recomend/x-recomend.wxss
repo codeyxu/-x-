@@ -1,0 +1,19 @@
+/* components/recomend/x-recomend.wxss */.recomend{
+  display: flex;
+  margin-top: 40rpx;
+  border-bottom: 6px solid rgb(186, 196, 196);
+}
+.recimg{
+  flex: 1;
+  text-align: center;
+  padding-bottom: 35rpx;
+}
+.recimg image {
+  width: 160rpx;
+  height: 160rpx;
+}
+.recimg .rectext{
+  font-size: 30rpx;
+  margin-top: 15rpx;
+  color: rgb(186, 196, 196);
+}

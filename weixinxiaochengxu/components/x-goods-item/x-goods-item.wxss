@@ -1,0 +1,36 @@
+/* components/x-goods-item/x-goods-item.wxss */
+.goods-item{
+  text-align: center;
+  padding-bottom: 85rpx;
+  font-size: 25rpx;
+  color: aqua;
+  
+}
+.image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.desc-info{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5rpx;
+}
+.title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+}
+.info .price{
+  color: blanchedalmond;
+}
+.info .icon{
+  width: 30rpx;
+  height: 30rpx;
+  padding: 0 6rpx 0 10rpx;
+  top: 5rpx;
+}
+.cfav {
+  position: relative;
+}

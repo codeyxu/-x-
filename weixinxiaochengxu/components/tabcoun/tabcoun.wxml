@@ -1,0 +1,8 @@
+<!--components/tabcoun/tabcoun.wxml-->
+<view class = "tabcoun">
+  <block  wx:for="{{titles}}">
+  <view class = "tabtex {{curindex == index?'active':''}}" bind:tap = 'click' data-index="{{index}}">
+  <text>{{item}}</text>
+  </view>
+  </block>
+</view>
